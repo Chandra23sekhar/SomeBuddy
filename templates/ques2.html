@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body{
+            background: url('../static/images/panoramic-view-foliage-tropical-forest-trees/2805830.jpg');
+            background-size: cover;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('input:checkbox').click(function() {
+                $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+        </script>
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            
+            <!--change-->
+            <div class="container">
+            <div class="flip">
+                <div class="front">
+                   <h1>Are you having any mood swings recently? </hi>
+                </div>
+                <div class="back">
+                   <h2>Your Answer:</h2>
+                   <input type="checkbox" id="yes-opt" value="1" name="yes-opt">Yes <br>
+                   <input type="checkbox" value="0" name="yes-opt">No <br>
+                   <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        </form>
+        <a href="./ques3.html">NEXT</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/**.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    animation: 3s arrowani;
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+
+  @keyframes arrowani{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: black;
+    }
+}**/
+
+
+  body{
+    background: url('../images/pexels-abdullah-ghatasheh-1631677.jpg');
+    background-size: cover;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+.outer{
+width: 30px;
+height: 30px;
+background-color: #f5f5f5;
+border-radius: 50%;
+animation: 5s myani;
+position: absolute;
+top: 50%;
+left: 50%;
+color: white;
+}
+h4{
+position: relative;
+top: -5px;
+left: 60%;
+transform: translate(-50%, -50%);
+}
+.next-link{
+color: black;
+text-decoration: none;
+
+}
+@keyframes myani{
+0%{
+  color: #f5f5f5;
+}
+50%{
+  color: #f5f5f5;
+}
+100%{
+  transform: scale(8);
+  box-shadow: 1px 1px 20px white;
+  color: black;
+  display: block;
+}
+
+}
+
+.nxt-btn{
+  position: absolute;
+  top: 75%;
+  left: 46%;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4em;
+  font-weight: bold;
+}
+
+
+ 
