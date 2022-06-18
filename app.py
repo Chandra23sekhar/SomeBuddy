@@ -22,18 +22,56 @@ db.create_all()
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'GET':
-        return render_template('home.html')
+        return render_template('index.html')
 
 @app.route('/q1', methods=['GET', 'POST'])
 def q1():
     if request.method == 'POST':
         ans = request.form.get('yes-opt')
         print(ans)
-    return render_template('q1.html')
+    return render_template('ques1.html')
 
-@app.route('/q2')
+@app.route('/q2', methods=['GET', 'POST'])
 def q2():
-    return render_template( 'ques2.html')
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques2.html')
+
+@app.route('/q3', methods=['GET', 'POST'])
+def q3():
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques3.html')
+
+@app.route('/q4', methods=['GET', 'POST'])
+def q4():
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques4.html')
+
+@app.route('/q5', methods=['GET', 'POST'])
+def q5():
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques5.html')
+
+@app.route('/q6', methods=['GET', 'POST'])
+def q6():
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques6.html')
+
+@app.route('/q7', methods=['GET', 'POST'])
+def q7():
+    if request.method == 'POST':
+        ans = request.form.get('yes-opt')
+        print(ans)
+    return render_template('ques7.html')
 
 colors = [
     "#F7464A", "#46BFBD", "#FDB45C", "#FEDCBA",
@@ -41,9 +79,10 @@ colors = [
     "#C71585", "#FF4500", "#FEDCBA", "#46BFBD"]
 
 '''Chat Bot '''
-@app.route('/chatbot', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def chatbot():
-    return render_template('index.html', title="Chat-Bot ")
+    return render_template('home.html', title="Chat-Bot ")
+
 
 @app.route("/get", methods=['GET', 'POST'])
 def get_bot_response():
