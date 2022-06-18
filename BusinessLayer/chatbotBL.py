@@ -6,7 +6,6 @@ from sklearn.feature_extraction.text import CountVectorizer # to perform bow
 from nltk import pos_tag # for parts of speech
 from sklearn.metrics import pairwise_distances # to perfrom cosine similarity
 from nltk.corpus import stopwords # for stop words
-nltk.download('punkt')
 
 def text_normalization(text):
     text=str(text).lower() # text to lower case
