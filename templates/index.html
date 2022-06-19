@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        body{
+            padding: 10px;
+            background: url('../static/images/tropical-forest-landscape-flat-design/2817625.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
 <html lang="en">
      {% include 'header.html' %}
     <body>
-
+        
        <!--Chat Bot-->
         <div id="dvChatbot">
             <!-- <div class="box"></div> -->
@@ -12,7 +22,7 @@
            
             <div class="boxed hidden">
                 <div class="box-header">
-                   <p style="font-size: large; ">Hey I am somebuddy.</p>
+                   <p style="font-size: large; ">Hey I am {{buddy_name}}.</p>
                   <p style="font-size: smaller; margin-left: 10%; margin-top: -15px;"> -Hey I'am here to help you. !!</p>
                 <p class="close" style="margin-right: 2px; z-index: -99999; color: rgb(218, 38, 38); opacity:2; margin-top: -65px;">Close X</p>
                 </div>
@@ -38,7 +48,7 @@
              
             </div>
           </div>
-          <a href="q1">NEXT</a>
+          <a href="q1" style="color: black; font-weight: bold;">NEXT STEPS</a>
         <!--End of Chatbot-->
 
         <!-- jQuery -->
@@ -48,8 +58,6 @@
         <script src="/static/js/bootstrap.min.js"></script>
 
        
-        
-     
        
         <!--For Chat Bot-->
         <script>

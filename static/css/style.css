@@ -34,7 +34,7 @@ CSS for chat bot
   #textInput {
     width: 80%;
     border: none;
-    border-bottom: 3px solid black;
+    border: 3px solid black;
     display: inline;
     min-height: 50px;
     font-size: 17px;
@@ -86,8 +86,8 @@ CSS for chat bot
  }
   div#dots .dot {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     margin-right: 3px;
     background: #303131;

@@ -19,10 +19,16 @@ class User(db.Model):
     disease = db.Column(db.String[20])
 db.create_all()
 
+nmm = ""
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    if request.method == 'GET':
-        return render_template('index.html')
+    # if request.method == 'POST':
+    #     nm = request.form.get('buddy_name')
+    #     nmm = nm
+    #     return render_template('home.html')
+    return render_template('home.html')
+    
 
 @app.route('/q1', methods=['GET', 'POST'])
 def q1():
@@ -81,7 +87,9 @@ colors = [
 '''Chat Bot '''
 @app.route('/home', methods=['GET', 'POST'])
 def chatbot():
-    return render_template('home.html', title="Chat-Bot ")
+    # if request.method == 'POST':
+    #     return render_template('index.html', title="Chat-Bot", buddy_name=nm)
+    return render_template('index.html', title='Chat Bot', buddy_name='SomeBuddy')
 
 
 @app.route("/get", methods=['GET', 'POST'])
